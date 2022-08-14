@@ -36,11 +36,11 @@
             }
         }
     },
-    "port": 8080,
+    "port": ${PORT},
     "delay-update-secs": 10,
-    "database-url": "postgres://%2Fvar%2Frun%2Fpostgresql/repo",
+    "database-url": "${DATABASE_URL}",
     "build-repo-base": "build-repo",
     "build-gpg-key": null,
     "gpg-homedir": null,
-    "secret": "c2VjcmV0"
+    "secret": "${REPO_TOKEN}"
 }

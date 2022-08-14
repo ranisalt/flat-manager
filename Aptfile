@@ -1,0 +1,3 @@
+gettext-base
+libpq-dev
+python3-aiohttp
