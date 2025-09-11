@@ -112,8 +112,8 @@ jobs:
           file: Dockerfile
           push: ${{ github.ref == 'refs/heads/master' }}
           tags: |
-            ghcr.io/flatpak/flat-manager:${{ github.sha }}
-            ghcr.io/flatpak/flat-manager:latest
+            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/${{ github.repository }}:latest
           labels: |
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.source=ssh://git@github.com:${{ github.repository }}.git
